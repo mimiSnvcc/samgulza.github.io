@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이심전심 활동 후기</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <h1>은미의 후기</h1>
+    <!-- 이심전심 활동 후기 -->
+    <div class="faq-item">
+      <h2>질문 1: 책읽기를 통해 AI와 가까워졌나요?</h2>
+      <p>답변: 책읽기를 통해 AI에 대한 흥미를 더욱 증폭시킬 수 있었습니다. 더불어 현재 세계 트렌드를 읽으며 앞으로 나아가야 할 방향을 잡을 수 있는 기회였습니다.</p>
+    </div>
+    <div class="faq-item">
+      <h2>질문 2: 앞으로의 활동 방향</h2>
+      <p>답변: AI에 대한 개념은 탑재되었겠다. 본격적으로 집중 공부를 해보려고 합니다. 일단 기본이 되는 파이썬을 공부해서 실 업무에 직접 적용해 보려고 합니다. 그때도 기회가 된다면 학습조직을 통해 함께 하고 싶은 마음이 있는데요 ㅎㅎ 저 혼자만의 마음은 아니겠죠?</p>
+    </div>
+    <!-- 더 많은 후기가 궁금하시면 다음 페이지를 클릭해 보세요 -->
+  </div>
+</body>
+<script>
+  window.onload = function() {
+    var faqItems = document.querySelectorAll('.faq-item h2');
+    faqItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+      });
+    });
+  }
+</script>
+</html>
